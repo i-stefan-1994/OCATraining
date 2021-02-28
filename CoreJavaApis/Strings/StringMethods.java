@@ -4,21 +4,21 @@ public class StringMethods{
 		//length()
 
 		String s1 = "alabala";
-		System.out.println(s1.length());
+		System.out.println(s1.length()); //7
 		String s2 = "ba";
-		System.out.println(s2.length());
-		System.out.println(s1.length() + s2.length() + " is the total length");
+		System.out.println(s2.length()); //2
+		System.out.println(s1.length() + s2.length() + " is the total length"); //9
 
 		//charAt()
 
-		System.out.println(s2.charAt(0));
-		System.out.println(s1.charAt(5));
+		System.out.println(s2.charAt(0)); //index 0 = a
+		System.out.println(s1.charAt(5)); //index 5 = l 
 		
 		//indexOf()
 
 		String s3 = "Lorep Ipsum whateverum";
 
-		System.out.println(s3.indexOf("Ipsum", 4)); // (String str, index)
+		System.out.println(s3.indexOf("Ipsum", 4)); // (String str, index) <- starting from index
 		System.out.println(s3.indexOf('a')); //(Char ch)
 		System.out.println(s3.indexOf('e', 5)); //(Char ch, index)
 		System.out.println(s3.indexOf("whateverum")); //(String)	
