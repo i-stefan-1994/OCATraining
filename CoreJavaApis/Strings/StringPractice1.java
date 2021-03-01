@@ -114,8 +114,7 @@ public class StringPractice1{
 		System.out.println("bere".substring(1, 4).concat("rere").contains("re"));
 
 
-		//replace(old char, new char)
-		//replace(old String, new String)
+		//replace(old char, new char	//replace(old String, new String)
 		
 		String r1 = "Dragon Hoard";
 
