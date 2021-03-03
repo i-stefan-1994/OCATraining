@@ -34,5 +34,38 @@ public class Formatting{
 		DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("dd/mm/yy hh:mm");
 		System.out.println(ldt.format(dtf2));
 
+
+		//getting specific timeframes
+
+		LocalDateTime ldt2 = LocalDateTime.of(2021, Month.JULY, 29, 4, 4, 5);
+		System.out.println(ldt2.getYear());
+		System.out.println(ldt2.getDayOfWeek());
+		System.out.println(ldt2.getHour());
+		System.out.println(ldt2.getMinute());
+		System.out.println(ldt2.getSecond());
+
+
+		//formatting date
+		System.out.println(ldt2.format(DateTimeFormatter.ISO_LOCAL_TIME));
+		System.out.println(ldt2.format(DateTimeFormatter.ISO_LOCAL_DATE));
+		System.out.println(ldt2.format(DateTimeFormatter.ISO_LOCAL_DATE_TIME));
+
+		//custom formatting
+
+		DateTimeFormatter f1 = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);
+		System.out.println(ldt2.format(f1));
+		DateTimeFormatter f2 = DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM);
+		System.out.println(ldt2.format(f2));
+		DateTimeFormatter f3 = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);
+		System.out.println(ldt2.format(f3));
+
+		DateTimeFormatter f4 = DateTimeFormatter.ofPattern("dd/mm/yyyy, HH:mm");
+		System.out.println(ldt2.format(f4));
+
+
+		//parsing
+
+		DateTimeFormatter f5 = DateTimeFormatter.ofPattern("dd/mm/yy hh:mm");
+		System.out.println(ldt2.format(f5));
 	}
 }
